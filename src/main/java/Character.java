@@ -4,6 +4,12 @@ public class Character {
     private String name;
 
 
+    Character(int power, int hp, String name) {
+        this.power = power;
+        this.hp = hp;
+        this.name = name;
+    }
+
     boolean isAlive() {
         if (this.hp < 0) {
             return false;
@@ -11,13 +17,6 @@ public class Character {
             return true;
         }
     }
-
-    Character(int power, int hp, String name) {
-        this.power = power;
-        this.hp = hp;
-        this.name = name;
-    }
-
 
 
     String kick(Character c) {
